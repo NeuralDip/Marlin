@@ -25,9 +25,9 @@
 
 #define BOARD_UNKNOWN -1
 
-//
-// RAMPS 1.3 / 1.4 - ATmega1280, ATmega2560
-//
+ //
+ // RAMPS 1.3 / 1.4 - ATmega1280, ATmega2560
+ //
 
 #define BOARD_RAMPS_OLD               1000  // MEGA/RAMPS up to 1.2
 
@@ -143,7 +143,8 @@
 #define BOARD_LEAPFROG_XEED2015       1321  // Leapfrog Xeed 2015
 #define BOARD_PICA_REVB               1322  // PICA Shield (original version)
 #define BOARD_PICA                    1323  // PICA Shield (rev C or later)
-#define BOARD_TENLOG_A                1324  // Tenlog Board. used also by D3 Hero
+#define BOARD_TENLOG_D3P              1324  // Tenlog Board for D3P. Used also by HICTOP D3 Hero Pro
+#define BOARD_TENLOG_D3S              1325  // Tenlog Board for D3S. Used also by HICTOP D3 Hero
 
 //
 // ATmega1281, ATmega2561
