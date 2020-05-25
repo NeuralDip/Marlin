@@ -127,6 +127,7 @@
 //#define BLUETOOTH
 
 // Choose the name from boards.h that matches your setup
+
 #ifndef MOTHERBOARD
   #define MOTHERBOARD BOARD_TENLOG_D3P
 #endif
