@@ -626,7 +626,7 @@ void MarlinSerial<Cfg>::printFloat(double number, uint8_t digits) {
     }
   }
 }
-
+#error SERIALLOK
 // If not using the USB port as serial port
 #if SERIAL_PORT >= 0
   template class MarlinSerial<MarlinSerialCfg<SERIAL_PORT>>;      // Define

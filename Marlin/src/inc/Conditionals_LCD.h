@@ -371,6 +371,7 @@
 #if EITHER(ULTRA_LCD, EXTENSIBLE_UI)
   #define HAS_DISPLAY 1
   #if ENABLED(ULTRA_LCD)
+#error HowTHeHell
     #define HAS_SPI_LCD 1
     #if ENABLED(DOGLCD)
       #define HAS_GRAPHICAL_LCD 1
