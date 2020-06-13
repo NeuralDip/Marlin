@@ -190,10 +190,6 @@
   #include "ramps/pins_MKS_GEN_L_V2.h"          // ATmega2560                             env:mega2560
 #elif MB(COPYMASTER_3D)
   #include "ramps/pins_COPYMASTER_3D.h"         // ATmega2560                             env:mega2560
-#elif MB(TENLOG_D3P)
-  #include "ramps/pins_Tenlog.h"                // ATmega2560                             env:mega2560
-#elif MB(TENLOG_D3S)
-  #include "ramps/pins_Tenlog.h"                // ATmega2560                             env:mega2560
 
 //
 // RAMBo and derivatives
@@ -264,6 +260,10 @@
   #include "mega/pins_PICAOLD.h"                // ATmega2560                             env:mega2560
 #elif MB(INTAMSYS40)
   #include "mega/pins_INTAMSYS40.h"             // ATmega2560                             env:mega2560
+#elif MB(TENLOG_D3P)
+  #include "mega/pins_Tenlog.h"                 // ATmega2560                             env:mega2560
+#elif MB(TENLOG_D3S)
+  #include "mega/pins_Tenlog.h"                 // ATmega2560                             env:mega2560
 
 //
 // ATmega1281, ATmega2561
