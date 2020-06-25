@@ -1190,6 +1190,26 @@ void setup() {
     SETUP_RUN(max7219.init());
   #endif
 
+  #if ENABLED(TENLOG_LCD_CONTROLLER)
+    TenlogScreen_begin(9600);
+    _delay_ms(100);
+    TenlogScreen_println("sleep=0");
+    _delay_ms(20);
+
+    TenlogScreen_println("page 0");
+    _delay_ms(20);
+
+    String strDate = __DATE__;
+    TenlogScreen_print("about.tVer.txt=\"Firmware: ");
+    TenlogScreen_print(strDate.c_str());
+    TenlogScreen_println("\"");
+
+    TenlogScreen_println("sleep=0");
+    TenlogScreen_println("page main");
+
+
+  #endif
+
   marlin_state = MF_RUNNING;
 
   SETUP_LOG("setup() completed.");

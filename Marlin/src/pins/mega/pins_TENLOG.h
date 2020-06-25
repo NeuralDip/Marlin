@@ -32,6 +32,8 @@
 #define BOARD_INFO_NAME      "Tenlog"
 #define DEFAULT_MACHINE_NAME "Hero"
 
+#define TENLOG_LCD_CONTROLLER
+
 //#define LCD_SCREEN_ROT_180
 
 //

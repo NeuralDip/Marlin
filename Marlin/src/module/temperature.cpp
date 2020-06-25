@@ -811,6 +811,18 @@ void Temperature::_temp_error(const heater_ind_t heater, PGM_P const serial_msg,
   #else
     if (!killed) { killed = 1; loud_kill(lcd_msg, heater); }
   #endif
+  #ifdef TENLOG_LCD_CONTROLLER
+    TenlogScreen_println("msgbox.vaFromPageID.val=1");
+    TenlogScreen_println("msgbox.vaToPageID.val=1");
+    String strMessage = "";
+
+    strMessage = lcd_msg;
+    strMessage = "msgbox.tMessage.txt=\"" + strMessage + "\"";
+    const char* str0 = strMessage.c_str();
+    TenlogScreen_println(str0);
+    TenlogScreen_println("page msgbox");
+
+  #endif
 }
 
 void Temperature::max_temp_error(const heater_ind_t heater) {
