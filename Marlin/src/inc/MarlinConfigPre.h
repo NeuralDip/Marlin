@@ -29,7 +29,6 @@
 // Prefix header to acquire configurations
 //
 #include <stdint.h>
-
 #include "../HAL/platforms.h"
 
 #include "../core/boards.h"

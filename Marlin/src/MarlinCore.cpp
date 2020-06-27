@@ -1242,5 +1242,9 @@ void loop() {
 
     endstops.event_handler();
 
+  #if ENABLED(TENLOG_LCD_CONTROLLER)
+    tenlog_status_screen(card);
+  #endif
+
   } while (ENABLED(__AVR__)); // Loop forever on slower (AVR) boards
 }

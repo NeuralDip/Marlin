@@ -532,6 +532,7 @@ private:
   static void M18_M84();
 
   #if ENABLED(SDSUPPORT)
+    static void M19();
     static void M20();
     static void M21();
     static void M22();

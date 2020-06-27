@@ -44,3 +44,8 @@
 #include "../core/language.h"
 #include "../core/utility.h"
 #include "../core/serial.h"
+
+
+#include "../lcd/dogm/TenlogLCD.h"
+
+
