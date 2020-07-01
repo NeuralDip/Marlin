@@ -129,7 +129,10 @@ bool MSerial2_available() {
 }
 
 char MSerial2_read() {
-  return MYSERIAL1.read();
+  char ReadFromLCD = MYSERIAL1.read();
+  MYSERIAL0.write(ReadFromLCD);
+  return ReadFromLCD;
+  //return MYSERIAL1.read();
 }
 
 void tenlog_screen_update(CardReader card)
