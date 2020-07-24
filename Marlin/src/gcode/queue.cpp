@@ -323,10 +323,8 @@ inline int read_serial(const uint8_t index) {
   switch (index) {
     case 0: return MYSERIAL0.read();
     #if NUM_SERIAL > 1
-      case 1: //return MYSERIAL1.read();
-        char ReadFromLCD = MYSERIAL1.read();
-        MYSERIAL0.write(ReadFromLCD);
-        return ReadFromLCD;
+      case 1: 
+        return MYSERIAL1.read();
     #endif
     default: return -1;
   }

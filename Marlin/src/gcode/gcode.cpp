@@ -413,7 +413,6 @@ void GcodeSuite::process_parsed_command(const bool no_ok/*=false*/) {
       case 17: M17(); break;                                      // M17: Enable all stepper motors
 
       #if ENABLED(SDSUPPORT)
-        case 19: M19(); break;                                    // M19: List SD card on Tenlog LCD
         case 20: M20(); break;                                    // M20: List SD card
         case 21: M21(); break;                                    // M21: Init SD card
         case 22: M22(); break;                                    // M22: Release SD card
